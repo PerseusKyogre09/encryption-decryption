@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Encryption and Decryption Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            color: #444;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            margin: 20px 0;
+        }
+        section h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .demo-img {
+            margin: 20px 0;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basic Encryption and Decryption Program</h1>
+        <img src="https://www.publicdomainpictures.net/pictures/320000/nahled/cryptography-concept.jpg" alt="Cryptography">
+    </header>
+    
+    <section>
+        <p><strong>Note:</strong> This project was originally intended to be my class 11th Computer Science project but was replaced by another idea. I've decided to upload it to GitHub as a fun and educational tool.</p>
+    </section>
+    
+    <section>
+        <h2>Description</h2>
+        <p>This is a basic encryption and decryption program written in Python, using the <code>cryptography</code> library. It allows you to securely encrypt and decrypt files with a randomly generated password. The program uses the <code>Fernet</code> symmetric encryption system to ensure your data is protected.</p>
+    </section>
+    
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li><strong>File Encryption:</strong> Select any file to encrypt using a randomly generated key.</li>
+            <li><strong>File Decryption:</strong> Decrypt the file using the correct password.</li>
+            <li><strong>Password Protection:</strong> A simple, randomly chosen password must be provided to decrypt the file.</li>
+        </ul>
+    </section>
+    
+    <section class="demo-img">
+        <h2>Demo</h2>
+        <h3>Encrypting a File</h3>
+        <img src="https://www.publicdomainpictures.net/pictures/300000/nahled/encrypting-file.jpg" alt="Encrypting a File">
+        <h3>Decrypting a File</h3>
+        <img src="https://www.publicdomainpictures.net/pictures/320000/nahled/decrypting-file.jpg" alt="Decrypting a File">
+    </section>
+    
+    <section>
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Key Generation:</strong> A symmetric encryption key is generated using <code>Fernet.generate_key()</code> and saved to a file (<code>key.key</code>).</li>
+            <li><strong>File Encryption:</strong> Select a file to encrypt via a file dialog. The file is encrypted and saved as <code>output_file.txt</code> in the same directory.</li>
+            <li><strong>Password Generation:</strong> A simple password is randomly selected from a predefined list.</li>
+            <li><strong>File Decryption:</strong> Enter the correct password to decrypt the file back to its original form.</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>File Structure</h2>
+        <pre>
+├── encrypt_decrypt.py      # Main Python script
+├── key.key                 # Generated encryption key
+├── README.md               # Project documentation
+        </pre>
+    </section>
+    
+    <section>
+        <h2>Requirements</h2>
+        <ul>
+            <li>Python 3.x</li>
+            <li><code>cryptography</code> library (<code>pip install cryptography</code>)</li>
+            <li><code>tkinter</code> for the file dialog</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Usage</h2>
+        <pre>
+git clone https://github.com/yourusername/yourrepository.git
+cd yourrepository
+
+pip install cryptography
+
+python encrypt_decrypt.py
+        </pre>
+        <p>Follow the prompts to encrypt and decrypt your files.</p>
+    </section>
+    
+    <section class="demo-img">
+        <h2>Screenshots</h2>
+        <img src="https://www.publicdomainpictures.net/pictures/300000/nahled/program-action.jpg" alt="Program in Action">
+    </section>
+    
+    <footer>
+        <p>This project is licensed under the MIT License.</p>
+    </footer>
+</body>
+</html>
