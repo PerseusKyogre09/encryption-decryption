@@ -30,9 +30,9 @@ This is a basic encryption and decryption program written in Python, using the `
     - Enter the correct password to decrypt the file back to its original form.
 
 ## 📂 File Structure
-├── encrypt_decrypt.py # Main Python script\n
-├── key.key # Generated encryption key\n 
-├── README.md # Project documentation\n
+`├── encrypt_decrypt.py # Main Python script`
+`├── key.key # Generated encryption key`
+`├── README.md # Project documentation`
 
 
 ## 🔧 Requirements
