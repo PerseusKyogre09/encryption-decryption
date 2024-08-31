@@ -14,14 +14,6 @@ This is a basic encryption and decryption program written in Python, using the `
 - **File Decryption:** Decrypt the file using the correct password.
 - **Password Protection:** A simple, randomly chosen password must be provided to decrypt the file.
 
-## 🖼️ Demo
-
-### Encrypting a File
-![Encrypting](https://www.publicdomainpictures.net/pictures/300000/nahled/encrypting-file.jpg)
-
-### Decrypting a File
-![Decrypting](https://www.publicdomainpictures.net/pictures/320000/nahled/decrypting-file.jpg)
-
 ## 🚀 How It Works
 
 1. **Key Generation:**
@@ -38,4 +30,43 @@ This is a basic encryption and decryption program written in Python, using the `
     - Enter the correct password to decrypt the file back to its original form.
 
 ## 📂 File Structure
+├── encrypt_decrypt.py # Main Python script 
+├── key.key # Generated encryption key 
+├── README.md # Project documentation
+
+
+## 🔧 Requirements
+
+- Python 3.x
+- `cryptography` library (`pip install cryptography`)
+- `tkinter` for the file dialog
+
+## 🛡️ Usage
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/yourrepository.git
+    cd yourrepository
+    ```
+
+2. Install the necessary dependencies:
+    ```bash
+    pip install cryptography
+    ```
+
+3. Run the program:
+    ```bash
+    python main.py
+    ```
+
+4. Follow the prompts to encrypt and decrypt your files.
+
+## 📌 Notes
+
+- This program is meant for educational purposes and should not be used for securing highly sensitive data.
+- The password is chosen from a very basic list, making it easy to guess.
+
+## 📜 License
+
+This project is licensed under the MIT License. See [LICENSE](https://opensource.org/license/MIT) for details.
 
